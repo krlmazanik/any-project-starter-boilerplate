@@ -7,7 +7,8 @@
     "build": "webpack --config webpack.prod.js",
     "start:dev": "webpack-dev-server --config webpack.dev.js --open",
     "start:prod": "npm run build && webpack-dev-server --content-base dist --open",
-    "clean": "rm -rf dist -v"
+    "clean": "rm -rf dist -v",
+    "clean:git": "rm -rf .git -v"
   },
   "repository": {
     "type": "git",

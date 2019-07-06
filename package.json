@@ -4,8 +4,10 @@
   "description": "Webpack configuration for development/production + common files/folders",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server  --config webpack.dev.js --open",
-    "build": "webpack --config webpack.prod.js"
+    "build": "webpack --config webpack.prod.js",
+    "start:dev": "webpack-dev-server --config webpack.dev.js --open",
+    "start:prod": "npm run build && webpack-dev-server --content-base dist --open",
+    "clean": "rm -rf dist -v"
   },
   "repository": {
     "type": "git",
